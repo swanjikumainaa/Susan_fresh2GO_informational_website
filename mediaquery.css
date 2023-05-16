@@ -1,0 +1,65 @@
+@media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      padding: 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heading h1 {
+      padding-top: 15rem 0 15rem 0;
+      color: #FBEEBC;
+      font-size: 4rem;
+    }
+    #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+      border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .navbar a {
+      margin: 1.5rem;
+      padding: 1.5rem;
+      background: #f3f3f3;
+      font-size: 2rem;
+      display: block;
+      border-radius: .5rem;
+    }
+    /* .praises{
+      flex-direction: column;
+    }
+    .support{
+      flex-direction: column;
+    } */
+  }
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .contact .row form .inputBox input {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:700px){
+    .praises{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+}
